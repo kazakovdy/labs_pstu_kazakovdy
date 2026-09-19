@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-строка из main
-=======
-строка из feature
->>>>>>> feature-branch
