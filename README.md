@@ -13,4 +13,4 @@
 | 4 | Алгоритмы сортировки | 22.09.2026 | Не начато |
 | 5 | Итоговый проект | 29.09.2026 | Не начато |
 
-![Картинка](https://raw.githubusercontent.com/ВАШ_ЛОГИН/Labs_PSTU_ФИО/main/images/pic.png)
+![Картинка]([https://raw.githubusercontent.com/ВАШ_ЛОГИН/Labs_PSTU_ФИО/main/images/pic.png](https://ru.pinterest.com/pin/372602569189735892/))
