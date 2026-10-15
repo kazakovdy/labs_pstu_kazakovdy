@@ -17,9 +17,9 @@ int main() {
     res2 = ++m > --n;      // 2) ++m>--n
     n = n0; m = m0;
     res3 = --n < ++m;      // 3) --n<++m
-    // вывод
-    cout << "Результат m-++n = " << res1 << endl;
-    cout << "Результат ++m>--n = " << res2 << endl;
-    cout << "Результат --n<++m = " << res3 << endl;
+   
+    cout << "Результат m-++n = " << res1 << endl; // Вывод
+    cout << "Результат ++m>--n = " << res2 << endl; //Вывод
+    cout << "Результат --n<++m = " << res3 << endl; //Вывод
     return 0;
 }
