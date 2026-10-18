@@ -1,17 +1,64 @@
-# зависимости
-node_modules/
-venv/
-__pycache__/
+# Visual Studio — настройки и кэш
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# секреты и окружение
-.env
-
-# сборка и логи
-dist/
+# Файлы сборки и компиляции
+Debug/
+Release/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+out/
 build/
+[Bb]uild/
+ipch/
+*.obj
+*.o
+*.pch
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.exp
+*.idb
+*.tlog
+*.lastbuildstate
 *.log
 
-# файлы ОС и IDE
-.DS_Store
+# CMake — результаты сборки
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Временные файлы
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
+# Системные файлы Windows
+Thumbs.db
+Desktop.ini
+
+# Пользовательские настройки тестирования
+TestResults/
+
+# NuGet — загруженные пакеты
+packages/
+
+# Локальные файлы настроек
+.env
+.env.*
+
+# Папки IDE других редакторов
 .idea/
 .vscode/
