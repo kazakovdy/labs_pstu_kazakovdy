@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std; //пространство
+#include <clocale>
 int main()
 {
-	setlocale(LC_ALL, ".UTF8"); //кириллица
+	setlocale(LC_ALL, "Russian"); //кириллица
 	double esp = 1e-4; //точность
 	double sum = 0.0;
 	double a = 1.0 / 2.0; //первый элемент суммы
@@ -13,5 +14,5 @@ int main()
 		a /= 2.0;
 		b /= 3.0;
 	}
-	cout << "Сумма ряда с точностью е=10-4 равна: " << sum << endl; //вывод
+	cout << "Summa ryada s tochnostyu e=10^-4 ravna: " << sum << endl; //вывод
 }
