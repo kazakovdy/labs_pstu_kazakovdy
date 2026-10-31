@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="182" viewBox="0 0 500 182">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#111111" />
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff" />
+<rect x="85.0" y="40.0" width="102.4" height="44.0" rx="22.0" ry="22.0" fill="#ffffff" stroke="#111111" stroke-width="1.8" />
+  <text x="136.2" y="66.9" text-anchor="middle" font-family="Courier New, Liberation Mono, monospace" font-size="14" fill="#111111" xml:space="preserve">начало</text>
+  <line x1="136.2" y1="84.0" x2="136.2" y2="122.0" stroke="#111111" stroke-width="1.8" marker-end="url(#arrow)" />
+</svg>
