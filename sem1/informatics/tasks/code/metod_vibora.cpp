@@ -1,7 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void selection_sort(int* arr, const int& n) {
+int main() {
+     int arr[] = { 64, 25, 12, 22, 11, 90, 5, 37 };
+     const int n = sizeof(arr) / sizeof(arr[0]);
+
+     cout << "Массив до сортировки:    ";
+     for (int i = 0; i < n; i++)
+          cout << arr[i] << " ";
+     cout << endl;
+
      for (int i = 0; i < n - 1; i++)
      {
           int min = i;
@@ -15,18 +23,6 @@ void selection_sort(int* arr, const int& n) {
                arr[min] = temp;
           }
      }
-}
-
-int main() {
-     int arr[] = { 64, 25, 12, 22, 11, 90, 5, 37 };
-     const int n = sizeof(arr) / sizeof(arr[0]);
-
-     cout << "Массив до сортировки:    ";
-     for (int i = 0; i < n; i++)
-          cout << arr[i] << " ";
-     cout << endl;
-
-     selection_sort(arr, n);
 
      cout << "Массив после сортировки: ";
      for (int i = 0; i < n; i++)
