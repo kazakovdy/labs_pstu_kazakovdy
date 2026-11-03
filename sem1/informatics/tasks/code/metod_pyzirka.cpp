@@ -1,28 +1,28 @@
 #include <iostream>
+#include <clocale>
 using namespace std;
+int main()
+{
+    setlocale(LC_ALL, ".UTF8");
+    const int n = 5;
+    int A[n] =  {7, 3, 5, 2, 6};
+    for(int i = 0; i < n - 1; ++i)
+        {
+            for(int j = n - 1; j > i; j--)
+                { 
+                    if(A[j - 1] >A[j])
+                    {
+                        int t = A[j - 1];
+                        A[j - 1] = A[j];
+                        A[j] = t;
+                    }
+                }
+        }
+     for (int k = 0; k < n; k++)
+    {
+        cout << A[k] << " ";
+    }
+    cout << endl;
 
-int main() {
-     int arr[] = { 64, 25, 12, 22, 11, 90, 5, 37 };
-     const int n = sizeof(arr) / sizeof(arr[0]);
-
-     cout << "Массив до сортировки:    ";
-     for (int i = 0; i < n; i++)
-          cout << arr[i] << " ";
-     cout << endl;
-
-     for (int i = 0; i < n; i++)
-          for (int j = 0; j < n - i - 1; j++)
-               if (arr[j] > arr[j + 1])
-               {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-               }
-
-     cout << "Массив после сортировки: ";
-     for (int i = 0; i < n; i++)
-          cout << arr[i] << " ";
-     cout << endl;
-
-     return 0;
+    return 0;
 }

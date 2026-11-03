@@ -1,6 +1,5 @@
 #include <iostream>   // ввод/вывод (cout)
 #include <cmath>      // exp, cos, sin, fabs, acos
-#include <iomanip>    // setprecision
 using namespace std;
 
 int main()
@@ -48,11 +47,10 @@ int main()
         double Y = exp(x * cos(PI / 4)) * cos(x * sin(PI / 4));
 
         // вывод: X, SN, SE, Y
-        cout << fixed << setprecision(5)
-             << "X=" << x
-             << "\tSN=" << SN
-             << "\tSE=" << SE
-             << "\tY=" << Y << endl;
+        cout << "X=" << x
+             << " SN=" << SN
+             << " SE=" << SE
+             << " Y=" << Y << endl;
     }
 
     return 0;
