@@ -16,3 +16,5 @@
 | 9 | Строковый ввод-вывод | ✗ | ✗ |
 | 10 | Динамические массивы | ✗ | ✗ |
 | 11 | Информационные динамические структуры | ✗ | ✗ |
+
+![картинка](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXf2ZUT8-Q_LHUxJfjTL2e7LDgQ2P_mfeyrSlq9VrU8791SdmeDfHmvOgr&s=10)
