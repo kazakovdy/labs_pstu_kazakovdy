@@ -1,11 +1,11 @@
 # VS Code (оставляем только общие настройки проекта)
-.vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
+.exe
 # Операционные системы
 .DS_Store
 Thumbs.db
