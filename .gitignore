@@ -5,7 +5,7 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-.exe
+*.exe
 # Операционные системы
 .DS_Store
 Thumbs.db
