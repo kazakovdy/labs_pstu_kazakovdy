@@ -10,17 +10,17 @@ int main()
     int A[n] =  {7, 3, 5, 2, 6};
     for(int i = 0; i < n - 1; ++i)
         {
-            int m = i;
+            int min = i;
             for(int j = i + 1; j < n; ++j)
                 {
-                    if(A[m] > A[j])
+                    if(A[min] > A[j])
                     {
-                        m = j;
+                        min = j;
                     }
                 }
-            int t = A[i];
-            A[i] = A[m];
-            A[m] = t;
+            int temp = A[i];
+            A[i] = A[min];
+            A[min] = temp;
         }
 cout << "Отсортированный массив: ";
     for (int k = 0; k < n; k++)
