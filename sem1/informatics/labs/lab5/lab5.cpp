@@ -24,14 +24,14 @@ int f1(int stroka, int stolb, int matrix[5][5])
 int f2(int stroka, int stolb, int matrix[5][5])
 {
     bool f = true;
-    for (int i = 0;i < stroka;i++)
+    for (int i = 0;i < 5;i++)
     {
         if ((i != stroka) && (matrix[i][stolb] <= matrix[stroka][stolb]))
         {
             f = false;
         }
     }
-    for (int j = 0;j < stolb;j++)
+    for (int j = 0;j < 5;j++)
     {
         if ((j != stolb) && (matrix[stroka][j] >= matrix[stroka][stolb]))
         {
@@ -68,7 +68,7 @@ int main()
     {
         for (int j = 0;j < 5;j++)
         {
-            if (f1(i,j,matrix) | f2(i, j, matrix))
+            if (f1(i, j, matrix) || f2(i, j, matrix))
             {
                 cout << i << ';'<< j << " - Седловая точка" << endl;
             }
