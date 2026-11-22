@@ -47,7 +47,6 @@ void printOne(Student& s)
         cout << " " << s.marks[i];
     cout << endl;
 }
-
 //есть ли хотя бы одна двойка
 bool hasTwo(Student& s)
 {
@@ -55,7 +54,6 @@ bool hasTwo(Student& s)
         if (s.marks[i] == 2) return true;
     return false;
 }
-
 // формирование файла
 void create()
 {
@@ -70,7 +68,6 @@ void create()
     }
     fclose(f);
 }
-
 // печать файла
 void print()
 {
@@ -81,7 +78,6 @@ void print()
         printOne(s);
     fclose(f);
 }
-
 // удаление: переписываем во временный файл всех, кроме тех, у кого есть двойка
 void removeBad()
 {
@@ -96,7 +92,6 @@ void removeBad()
     remove("students.dat");
     rename("tmp.dat", "students.dat");
 }
-
 // добавление в начало: сначала новая запись, потом все старые
 void addToStart()
 {
@@ -116,16 +111,12 @@ void addToStart()
 int main()
 {
     setlocale(LC_ALL, "rus");
-
     create();
     print();
-
     removeBad();
     print();
-
     cout << "Новый школьник (в начало):" << endl;
     addToStart();
     print();
-
     return 0;
 }
