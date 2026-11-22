@@ -1,0 +1,134 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+
+# Тесты и покрытие
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# Линтеры и типизация
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ---------- C / C++ ----------
+# Объектные файлы и библиотеки
+*.o
+*.obj
+*.lo
+*.slo
+*.a
+*.lib
+*.la
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+
+# Предкомпилированные заголовки и модули
+*.gch
+*.pch
+*.pcm
+*.ifc
+
+# Отладочная информация
+*.pdb
+*.ilk
+*.dSYM/
+
+# Дампы
+core
+core.*
+*.stackdump
+
+# ---------- CMake ----------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+_deps/
+install_manifest.txt
+compile_commands.json
+CMakeUserPresets.json
+
+# Каталоги сборки
+build/
+build-*/
+cmake-build-*/
+out/
+
+# ---------- Make / Ninja ----------
+.ninja_deps
+.ninja_log
+*.d
+
+# ---------- Менеджеры зависимостей ----------
+conan.lock
+conanbuildinfo.*
+conaninfo.txt
+vcpkg_installed/
+
+# ---------- IDE и редакторы ----------
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.swp
+*.swo
+*~
+.cache/
+.clangd/
+
+# ---------- Профилирование ----------
+*.gcda
+*.gcno
+*.gcov
+callgrind.out.*
+perf.data*
+*.prof
+
+# ---------- ОС ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Секреты и локальные настройки ----------
+.env
+.env.*
+!.env.example
+*.local
