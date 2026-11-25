@@ -14,7 +14,7 @@ int main()
     int c2 = N / 2;
     for (int i = 0; i < N; i++)
     {
-        int w = (i < N - 1 - i) ? i : N - 1 - i;
+        intф w = (i < N - 1 - i) ? i : N - 1 - i;
         int left = c1 - w;
         int right = c2 + w;
 

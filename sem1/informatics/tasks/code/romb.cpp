@@ -2,46 +2,28 @@
 using namespace std;
 
 const int N = 7;
+
 int main()
 {
     int a[N][N];
-    int c1 = (N - 1) / 2;
-    int c2 = N / 2;
+    int c = N / 2;
     for (int i = 0; i < N; i++)
     {
-        // расстояние от строки до верхнего или нижнего края
-        int w;
-        if (i < N - 1 - i)
-            w = i;
-        else
-            w = N - 1 - i;
-
-        int left = c1 - w;
-        int right = c2 + w;
-
+        int w = i < N - 1 - i ? i : N - 1 - i;
         for (int j = 0; j < N; j++)
         {
-            if (j == left || j == right)
-                a[i][j] = 1;      // контур
-            else if (j > left && j < right)
-                a[i][j] = 0;      // внутри
-            else
-                a[i][j] = -1;     // снаружи
+            int d = j > c ? j - c : c - j;
+            if (d == w)     a[i][j] = 1;
+            else if (d < w) a[i][j] = 0;
+            else            a[i][j] = -1;
         }
     }
-
-    // вывод
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
-        {
-            if (a[i][j] == -1)
-                cout << "  ";
-            else
-                cout << a[i][j] << " ";
-        }
+            if (a[i][j] == -1) cout << "  ";
+            else               cout << a[i][j] << " ";
         cout << endl;
     }
-
     return 0;
 }
